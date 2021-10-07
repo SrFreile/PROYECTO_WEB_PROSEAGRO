@@ -103,13 +103,6 @@
 }
 
 
-
-.form-registrarse {
-  text-align: center;
-  background-color: rgb(222, 230, 223);
-  border-radius: 20px 20px 20px 20px;
-}
-
 /* Edicion imagenes nosotros  */
 .iconosotros {
   height: 200px;
@@ -151,8 +144,6 @@
   font-size: 1;
 }
 
-
-
 .Contador {
   margin-top: 25px;
 }
@@ -167,8 +158,14 @@
   top: 25%;
   left: 25%;
 }
+.form-control, .btn{
+min-height: 3.125rem;
+line-height: initial;
+}
 
 body {
   background-image: url(imagenes/fondo.jpg);
   background-size: 100%;
+  color: aliceblue;
+  
 }
