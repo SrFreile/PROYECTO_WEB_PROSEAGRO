@@ -1,0 +1,169 @@
+.flexsearch {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.IconosMenu {
+  margin-top: 60px;
+  padding-left: 1px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.Hola {
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+.TituloPagina,
+.Unpocodenosotros,
+.nuestroequipo,
+.Registrarse {  
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1.5px black;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  size: 5px;
+  background-color: rgb(48, 179, 54);
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner > img {
+  width: 100%;
+  height: 400px;
+  max-width: 1400px;
+  object-fit: cover;
+  animation: infinite normal linear;
+  margin-bottom: 25px;
+}
+
+.navega {
+  width: 50%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.navega > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navega > a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.navega {
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+  margin-left: 100px;
+}
+
+.Page {
+  height: 150px;
+  width: 120px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.Page2 {
+  height: 150px;
+  width: 120px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.imagprin1,
+.iconosagro1 {
+  justify-content: space-around;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.imagenagro {
+  height: 300px;
+  width: 400px;
+}
+
+.iconagro {
+  height: 200px;
+  width: 200px;
+}
+
+.card1 {
+  margin-bottom: 25px;
+}
+
+
+/* Edicion imagenes nosotros  */
+.iconosotros {
+  height: 200px;
+  width: 200px;
+}
+
+.imanosotros1 {
+  justify-content: space-around;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+
+  flex-wrap: wrap;
+}
+/* fin edicion imagenes nosotros  */
+
+/* Ajuste de descripcion de nosotros */
+.textonosotros {
+  float: left;
+  width: 20em;
+  height: 20em;
+  margin: 3px;
+  padding: 3px;
+  font-family: "ArIaL", serif;
+}
+
+/* Fin ajuste de descripcion de nosotros */
+
+.footer-center {
+  padding-top: 20px;
+  background-color: #0de174;
+  height: 200px;
+  color: white;
+  justify-content: space-evenly;
+  background-color: rgb(48, 179, 54);
+  text-align: center;
+  font-size: 1;
+}
+
+.Contador {
+  margin-top: 25px;
+}
+
+.form-registrarse {
+  float: none;
+  width: 40em;
+  margin: 3px;
+  padding: 3px;
+  font-family: "ArIaL", serif;
+  position: relative;
+  top: 25%;
+  left: 25%;
+}
+.form-control, .btn{
+min-height: 3.125rem;
+line-height: initial;
+}
+
+body {
+  background-image: url(imagenes/fondo.jpg);
+  background-size: 100%;
+  color: aliceblue;
+  
+}

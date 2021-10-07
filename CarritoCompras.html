@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="keywods" content="Agronomia,Plantas,Fertilizantes,Campo,Agricultor">
+	<meta name="description"
+		content="Somos una empresa enfocada a la agroindustria, en la venta de Fertilizantes y otros complementos para las Plantas">
+	<meta name="author" content="Kevin Andres Salas Gomez">
+	<meta name="copyright" content="Kevin.salas">
+	<meta name="robots" content="index">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<!-- Se añade icono en la parte superior de la pagina-->
+	<link rel="icon" href="imagenes/logo.png">
+
+	<!-- Se agrega este link para uso del bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  
+
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <div class="row">
+
+              <!-- logo -->
+				<img class="Page" src="imagenes/logo2 - copia.png">
+				<br><br>
+				<!-- fin logo-->
+
+                <article>
+
+                    <div class="Titulocarrito">
+                        <h1>Bievenido al carrito de compras de <br>
+                             PROSEAGRO CVP</h1>
+                    </div>
+                </article>
+
+                    
+
+                <div>
+                    <img class="Carrito" src="imagenes/IconoCarritoCompras.png">
+                </div>
+
+            </div>
+
+            <div class="container" id="app">
+
+                <br>
+                <h1>{{ mensaje }}</h1>
+                <br>
+
+                <input class="form-control" type="text" v-model="nuevaTarea" v-on:keyup.enter="agregarTarea"
+                    placeholder="Nombre del producto">
+                <button class=" btn btn-primary" v-on:click="agregarTarea">Agregar producto</button>
+
+                <div class="mt-3" v-for="(item, index) of tareas" :key="item.id">
+
+                    <div v-bind:class="[item.estado? 'alert-success' : 'alert-danger']" class="alert" role="alert">
+
+                        <div class="d-flex justify-content-between">
+                            {{ item.nombre }}
+
+                            <div>
+                                {{ item.estado }}
+                            </div>
+                            <div>
+                                <button class="btn btn-success" @click="editarTarea(index)">Confirmar</button>
+                                <button class="btn btn-danger" v-on:click="eliminarTarea(index)">Eliminar</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <div class="ConfirmarCompras" style="text-align: center">
+                    <a href="FormaPago.html" target="_BLANK"> <button class="btn btn-secondary" type="submit">Ir a
+                            pagar</button></a>
+                </div>
+
+            </div>
+        </header>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="AppCRUDCarritoCompras.js"></script>
+
+</body>
+
+<br>
+<br>
+<br>
+
+<footer>
+    <center><div class="footer-center">
+		<h3>© Todos los derechos reservados</h3>
+		<h4>Escríbenos: proseagro.cvp@gmail.com</h4>
+		<h4>Te invitamos a conocer nuestras redes:</h4>
+		<a href="https://www.facebook.com/profile.php?id=100072549925462" target="_BLANK">
+			<img src="imagenes/IconoFacebook.png" width="50" height="50"></a>
+		<a href="https://twitter.com/proseagrocvp" target="_BLANK">
+			<img src="imagenes/IconoTwitter.png" width="50" height="50"></a>
+		<a href="https://www.instagram.com/proseagro_cvp/?hl=es" target="_BLANK">
+			<img src="imagenes/IconoInstagram.png" width="50" height="50"></a>
+		<a href="https://api.whatsapp.com/send?phone=+573216247924&text=Hola!%20Bienvenidos%20a%20PROSEAGRO%20CVP.%20%C2%BFEn%20qu%C3%A9%20podemos%20servirte?"
+			target="_BLANK">
+			<img src="imagenes/IconoWhatsapp.png" width="50" height="50"></a>
+		<a href="https://www.youtube.com/channel/UC8veVpNHpOlJFmlq-q7S3Ow" target="_BLANK">
+			<img src="imagenes/IconoYoutube.png" width="50" height="50"></a>
+		<a href="https://www.linkedin.com/in/proseagro-cvp-99b197221/" target="_BLANK">
+			<img src="imagenes/IconoLinkedin.png" width="50" height="50"></a>
+		<a href="Mensaje.html" window.document.title='Mensaje' ; target="_BLANK">
+			<img src="imagenes/IconoMensaje.png" width="50" height="50"></a>
+
+	</div></center>
+</footer>
+
+</html>
